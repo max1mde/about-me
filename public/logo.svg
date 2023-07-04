@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient id="color-0-9" gradientUnits="userSpaceOnUse" x1="99.474" y1="356.899" x2="99.474" y2="385.365" xlink:href="#color-0"/>
+        <linearGradient id="color-0">
+            <stop style="stop-color: #3a1c71;" offset="0"/>
+            <stop style="stop-color: #d76d77;" offset="0.5"/>
+            <stop style="stop-color: #ffaf7b;" offset="1"/>
+        </linearGradient>
+        <linearGradient id="color-0-8" gradientUnits="userSpaceOnUse" x1="99.474" y1="356.899" x2="99.474" y2="385.365" xlink:href="#color-0"/>
+        <linearGradient id="color-0-10" gradientUnits="userSpaceOnUse" x1="164.14" y1="358.137" x2="164.14" y2="385.365" xlink:href="#color-0"/>
+        <linearGradient id="color-0-7" gradientUnits="userSpaceOnUse" x1="164.14" y1="358.137" x2="164.14" y2="385.365" xlink:href="#color-0"/>
+        <linearGradient id="color-0-11" gradientUnits="userSpaceOnUse" x1="110.613" y1="135.365" x2="110.613" y2="168.781" xlink:href="#color-0"/>
+        <linearGradient id="color-0-6" gradientUnits="userSpaceOnUse" x1="110.613" y1="135.365" x2="110.613" y2="168.781" xlink:href="#color-0"/>
+        <linearGradient id="color-0-12" gradientUnits="userSpaceOnUse" x1="157.024" y1="136.603" x2="157.024" y2="166.925" xlink:href="#color-0"/>
+        <linearGradient id="color-0-5" gradientUnits="userSpaceOnUse" x1="157.024" y1="136.603" x2="157.024" y2="166.925" xlink:href="#color-0"/>
+        <linearGradient id="color-0-13" gradientUnits="userSpaceOnUse" x1="407.952" y1="96.999" x2="407.952" y2="127.321" xlink:href="#color-0"/>
+        <linearGradient id="color-0-4" gradientUnits="userSpaceOnUse" x1="407.952" y1="96.999" x2="407.952" y2="127.321" xlink:href="#color-0"/>
+        <linearGradient id="color-0-14" gradientUnits="userSpaceOnUse" x1="385.674" y1="338.954" x2="385.674" y2="372.37" xlink:href="#color-0"/>
+        <linearGradient id="color-0-3" gradientUnits="userSpaceOnUse" x1="385.674" y1="338.954" x2="385.674" y2="372.37" xlink:href="#color-0"/>
+        <linearGradient id="color-0-15" gradientUnits="userSpaceOnUse" x1="321.009" y1="342.048" x2="321.009" y2="375.464" xlink:href="#color-0"/>
+        <linearGradient id="color-0-2" gradientUnits="userSpaceOnUse" x1="321.009" y1="342.048" x2="321.009" y2="375.464" xlink:href="#color-0"/>
+        <linearGradient id="color-0-16" gradientUnits="userSpaceOnUse" x1="239.635" y1="268.41" x2="239.635" y2="320.39" xlink:href="#color-0"/>
+        <linearGradient id="color-0-1" gradientUnits="userSpaceOnUse" x1="239.635" y1="268.41" x2="239.635" y2="320.39" xlink:href="#color-0"/>
+        <linearGradient id="color-0-17" gradientUnits="userSpaceOnUse" x1="254.178" y1="96.997" x2="254.178" y2="385.391" xlink:href="#color-0"/>
+        <linearGradient id="color-0-0" gradientUnits="userSpaceOnUse" x1="254.178" y1="96.997" x2="254.178" y2="385.391" xlink:href="#color-0"/>
+        <linearGradient gradientUnits="userSpaceOnUse" x1="249.688" y1="102.817" x2="249.688" y2="386.996" id="color-0-18" spreadMethod="pad" xlink:href="#color-0"/>
+    </defs>
+    <path style="stroke: rgb(0, 0, 0); fill-rule: nonzero; fill: url(#color-0-18);" d="M 83.379 375.634 C 85.524 378.157 89.815 383.205 104.452 385.476 C 119.09 387.747 144.075 387.243 158.46 385.476 C 172.846 383.709 176.631 380.681 177.389 360.869 C 178.146 341.058 175.874 304.464 176.001 286.546 C 176.127 268.627 178.65 269.384 185.969 276.577 C 193.288 283.769 205.402 297.398 217.895 303.959 C 230.387 310.521 243.258 310.016 256.634 301.561 C 270.01 293.107 283.89 276.702 292.093 268.374 C 300.295 260.046 302.818 259.793 304.333 277.586 C 305.847 295.378 306.351 331.216 309.128 350.649 C 311.904 370.081 316.951 373.11 331.337 374.372 C 345.722 375.633 369.445 375.129 383.199 372.352 C 396.954 369.576 400.739 364.529 401.749 346.736 C 402.758 328.944 400.992 298.407 404.399 257.901 C 407.806 217.395 416.387 166.92 417.901 138.276 C 419.416 109.631 413.863 102.817 398.847 102.817 C 383.831 102.817 359.35 109.631 331.463 130.073 C 303.576 150.516 272.281 184.586 252.722 197.584 C 233.163 210.581 225.34 202.505 213.857 189.508 C 202.374 176.51 187.231 158.592 176.505 147.992 C 165.779 137.392 159.47 134.111 149.122 132.849 C 138.775 131.587 124.389 132.345 113.537 136.13 C 102.685 139.916 95.367 146.73 90.572 186.731 C 85.777 226.733 83.505 299.921 82.37 336.516 C 81.234 373.11 81.234 373.11 81.234 373.11 C 81.234 373.11 81.234 373.11 83.379 375.634"/>
+</svg>
