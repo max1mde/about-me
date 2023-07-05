@@ -7,11 +7,23 @@ $secondary: #cc6c00 !default;
 
 @import "bootstrap";
 
-
-
 $background: #843600 !default;
 
+.primary-button {
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+.primary-button:hover {
+  transform: scale(1.2);
+}
 
+.btn-primary {
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+.btn-primary:hover {
+  transform: scale(1.2);
+}
 
 h1 {
   text-align: center;
@@ -24,7 +36,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 
 .project-card {
   --bs-card-border-width: 0px;
@@ -42,8 +53,6 @@ body {
   transform: scale(1.05);
   filter: blur(0);
 }
-
-
 
 .card-img-top {
   border-top-left-radius: 20px;

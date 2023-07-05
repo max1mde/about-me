@@ -24,7 +24,7 @@ function App() {
     routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);
     return (
         <div data-bs-theme="dark">
-            <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => console.log("test")}></Navbar>
+            <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={()=> null}></Navbar>
             <Routes>{routes}</Routes>
         </div>
     );

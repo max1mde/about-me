@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 interface Props {
     pages: Page[];
-    onSelectItem: (item: string) => void;
+    onSelectItem?: (item: string) => void;
     active: number;
     title: string;
 }
@@ -34,7 +34,9 @@ function Navbar({ title, pages, onSelectItem, active }: Props) {
                                     : ""
                             }>
                                 <NavLink to={item.path} className="nav-link" onClick={() => {
-                                    onSelectItem(item.title);
+                                    if (onSelectItem) {
+                                        onSelectItem(item.title);
+                                    }
                                 }}>{item.title}
                                 </NavLink>
                             </li>

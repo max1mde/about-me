@@ -20,7 +20,8 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
         setHovered(hovered);
     };
 
-    const cardClassName = `card project-card ${!isHovered && allHovered ? "blurred" : ""}`;
+    const cardClassName = `card hover-card project-card ${!isHovered && allHovered ? "blurred" : ""}`;
+
 
     useEffect(() => {
         const handleImageLoad = () => {
@@ -50,6 +51,7 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
         <div className={cardClassName} style={cardStyle}
              onMouseEnter={() => handleCardHover(true)}
              onMouseLeave={() => handleCardHover(false)}>
+
             <img
                 src={loaded ? imageSRC : placeholder}
                 loading="lazy"
@@ -60,6 +62,7 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
                 <div className="card-body project-card-body">
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text">{description}</p>
+                    <div className="glow"/>
                     <a target="_blank" href={buttonURL} className="btn btn-primary primary-button card-button">
                         {buttonText}
                     </a>
