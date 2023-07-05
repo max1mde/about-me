@@ -1,0 +1,57 @@
+// style.scss
+
+$primary: #a94dff !default;
+
+$secondary: #ffac53 !default;
+
+$background: #843600 !default;
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110vw;
+  height: 110vh;
+  z-index: -1;
+  background-image: url("../public/images/nextfight-project.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(20px);
+}
+.navbar-brand-image {
+  max-height: 60px;
+}
+.projects-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: auto;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 20px;
+  height: 100vh;
+  overflow: auto;
+  padding-bottom: 190px;
+}
+

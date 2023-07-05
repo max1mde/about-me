@@ -21,7 +21,7 @@ function App() {
         <Route key={index} path={page.path} element={page.component && <page.component />} />
     ));
     return (
-        <div>
+        <div data-bs-theme="dark">
             <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => console.log("test")}></Navbar>
             <Routes>{routes}</Routes>
         </div>
