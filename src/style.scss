@@ -1,10 +1,17 @@
 // style.scss
 
-$primary: #a94dff !default;
 
-$secondary: #ffac53 !default;
+$primary: #9a2eff !default;
+
+$secondary: #cc6c00 !default;
+
+@import "bootstrap";
+
+
 
 $background: #843600 !default;
+
+
 
 h1 {
   text-align: center;
@@ -18,6 +25,41 @@ body {
   overflow: hidden;
 }
 
+
+.project-card {
+  --bs-card-border-width: 0px;
+  --bs-card-border-radius: 20px;
+  transition: filter 0.6s, transform 0.3s ease;
+  filter: blur(0);
+}
+
+.project-card.blurred {
+  filter: blur(2px);
+  transform: scale(0.9);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  filter: blur(0);
+}
+
+
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.project-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-button {
+  margin: 10px;
+  align-self: center;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -27,31 +69,62 @@ body::before {
   width: 110vw;
   height: 110vh;
   z-index: -1;
-  background-image: url("../public/images/nextfight-project.png");
+  background-image: url("../public/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: blur(20px);
+  filter: blur(10px);
 }
+
 .navbar-brand-image {
   max-height: 60px;
 }
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .projects-page {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   overflow: auto;
 }
-.projects-container {
+
+.cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  margin: 0 auto;
   gap: 20px;
+}
+
+.title-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 100px 190px;
   height: 100vh;
   overflow: auto;
-  padding-bottom: 190px;
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
 

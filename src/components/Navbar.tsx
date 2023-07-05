@@ -44,7 +44,7 @@ function Navbar({ title, pages, onSelectItem, active }: Props) {
                         <form className="form-inline" onSubmit={(e) => e.preventDefault()}>
                             <div className="input-group">
                                 <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
-                                <button className="btn btn-outline-success custom-search-button primary-search-button " type="submit">Search</button>
+                                <button className="btn btn-outline-primary custom-search-button primary-search-button " type="submit">Search</button>
                             </div>
                         </form>
                     </div>

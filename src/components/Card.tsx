@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 
-
 interface Props {
     title: string;
     description: string;
@@ -8,10 +7,20 @@ interface Props {
     buttonURL: string;
     imageSRC: string;
     placeholderIMG?: string;
+    setHovered: (hovered: boolean) => void;
+    allHovered: boolean;
 }
 
-const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-defined", imageSRC }: Props) => {
+const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-defined", imageSRC, setHovered, allHovered}: Props) => {
     const [loaded, setLoaded] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleCardHover = (hovered: boolean) => {
+        setIsHovered(hovered);
+        setHovered(hovered);
+    };
+
+    const cardClassName = `card project-card ${!isHovered && allHovered ? "blurred" : ""}`;
 
     useEffect(() => {
         const handleImageLoad = () => {
@@ -36,8 +45,11 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
     if(placeholder === "not-defined") {
         placeholder = imageSRC.replace(".png", "-small.png");
     }
+
     return (
-        <div className="card" style={cardStyle}>
+        <div className={cardClassName} style={cardStyle}
+             onMouseEnter={() => handleCardHover(true)}
+             onMouseLeave={() => handleCardHover(false)}>
             <img
                 src={loaded ? imageSRC : placeholder}
                 loading="lazy"
@@ -45,13 +57,13 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
                 style={imageStyle}
                 alt="..."
             />
-            <div className="card-body project-card">
-                <h5 className="card-title">{title}</h5>
-                <p className="card-text">{description}</p>
-                <a href={buttonURL} className="btn btn-primary primary-button">
-                    {buttonText}
-                </a>
-            </div>
+                <div className="card-body project-card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <p className="card-text">{description}</p>
+                    <a target="_blank" href={buttonURL} className="btn btn-primary primary-button card-button">
+                        {buttonText}
+                    </a>
+                </div>
         </div>
     );
 };

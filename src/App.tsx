@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar.tsx";
 import HomePage from './pages/HomePage.tsx';
 import ContactPage from './pages/ContactPage.tsx';
 import ProjectsPage from './pages/ProjectsPage.tsx';
+import NotFoundPage from './pages/NotFoundPage.tsx';
 import { Route, Routes } from "react-router";
 
 interface Page {
@@ -20,6 +21,7 @@ function App() {
     const routes = pages.map((page, index) => (
         <Route key={index} path={page.path} element={page.component && <page.component />} />
     ));
+    routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);
     return (
         <div data-bs-theme="dark">
             <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => console.log("test")}></Navbar>
