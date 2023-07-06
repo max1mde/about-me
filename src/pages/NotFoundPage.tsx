@@ -2,12 +2,14 @@ import Button from "../components/Button.tsx";
 
 
 function NotFoundPage() {
-
+    const style = {
+        width: "400px",
+    };
     return (
         <div>
-            <h1 className={"page-title"}>Page not found!</h1>
             <div className={"center-content"}>
-                <Button onClick={() => null} buttonURL={"/"}>
+                <img src={"../../public/images/404.png"} style={style}/>
+                <Button color={"danger"} onClick={() => null} buttonURL={"/"}>
                     Go back home
                 </Button>
             </div>
