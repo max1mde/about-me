@@ -5,17 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './style.scss';
 import './blur-image.css';
 import './3D-card.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
-const basename = import.meta.env.DEV ? "/" : "/about-me/";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-      <BrowserRouter basename={basename}>
-          <Routes>
-              <Route path="/" element={<App />} />
-          </Routes>
+      <BrowserRouter>
+          <App />
       </BrowserRouter>
   </React.StrictMode>,
 )
