@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage.tsx';
 import ContactPage from './pages/ContactPage.tsx';
 import ProjectsPage from './pages/ProjectsPage.tsx';
 import NotFoundPage from './pages/NotFoundPage.tsx';
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -35,14 +35,10 @@ function App() {
     ));
     routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);
 
-    const basename = import.meta.env.DEV ? "/" : "/react-vite-gh-pages/";
-
     return (
         <div data-bs-theme="dark">
-            <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => null} />
-            <BrowserRouter basename={basename}>
+                <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => null} />
                 <Routes>{routes}</Routes>
-            </BrowserRouter>
         </div>
     );
 }
