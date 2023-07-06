@@ -7,8 +7,8 @@ function HomePage() {
                 <div className={"glow"}/>
                 <div className="home-main-content">
                     <div>
-                        <h1 className={"home-main-title"}>Was machen sachen?</h1>
-                        <p className={"home-main-text"}>Bla bla bla</p>
+                        <h1 className={"home-main-title"}>Hi!</h1>
+                        <p className={"home-main-text"}>This is my first react project</p>
                         <div className={"home-main-buttons"}>
                             <Button buttonURL={"/contact"} onClick={() => null}>Contact me</Button>
                             <Button buttonURL={"/projects"} color={"secondary"} onClick={() => null}>My projects</Button>

@@ -20,25 +20,25 @@
         transform: scale(0.8, 0.8);
     }
     .home-main-skin {
-        width: 50px;
+        width: 700px;
     }
 }
 @media (max-width: 576px) {
     .home-main-card {
-        padding: 30px;
+        padding: 50px;
         transform: scale(0.7, 0.7);
     }
     .home-main-skin {
-        width: 40px;
+        width: 500px;
     }
 }
 @media (max-width: 400px) {
     .home-main-card {
-        padding: 6px;
+        padding: 20px;
         transform: scale(0.6, 0.6);
     }
     .home-main-skin {
-        width: 20px;
+        width: 400px;
     }
 }
 .home-main-content {
