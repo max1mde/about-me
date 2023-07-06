@@ -8,7 +8,7 @@ import './3D-card.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
-const basename = import.meta.env.DEV ? "/" : "/react-vite-gh-pages/";
+const basename = import.meta.env.DEV ? "/" : "/about-me/";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
