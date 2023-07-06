@@ -5,18 +5,18 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './style.scss';
 import './blur-image.css';
 import './3D-card.css';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 const basename = import.meta.env.DEV ? "/" : "/about-me/";
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-      <HashRouter basename={basename}>
+      <BrowserRouter basename={basename}>
           <Routes>
               <Route path="/" element={<App />} />
           </Routes>
-      </HashRouter>
+      </BrowserRouter>
   </React.StrictMode>,
 )
 
