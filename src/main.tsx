@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './style.scss';
 import './blur-image.css';
 import './3D-card.css';
+import './home-page.css';
 import { BrowserRouter } from 'react-router-dom';
 
 

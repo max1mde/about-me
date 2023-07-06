@@ -2,7 +2,7 @@
 function ContactPage() {
     return (
         <div>
-            <h1>Contact Page</h1>
+            <h1 className={"page-title"}>Contact</h1>
             {}
         </div>
     );

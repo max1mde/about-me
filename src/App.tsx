@@ -14,8 +14,6 @@ interface Page {
     component: React.ComponentType<any> | null;
 }
 
-
-
 function App() {
 
     const pages: Page[] = [

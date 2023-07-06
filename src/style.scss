@@ -3,7 +3,7 @@
 
 $primary: #9a2eff !default;
 
-$secondary: #cc6c00 !default;
+$secondary: #6d6d6d !default;
 
 @import "bootstrap";
 
@@ -18,16 +18,35 @@ $background: #843600 !default;
   transform: scale(1.2);
 }
 
+.secondary-button {
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.secondary-button:hover {
+  transform: scale(1.2);
+}
+
 .btn-primary {
   z-index: 999;
   transition: transform 0.3s ease;
 }
 
+.btn-secondary {
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+  transform: scale(1.2);
+}
+
+
 .btn-primary:hover {
   transform: scale(1.2);
 }
 
-h1 {
+.page-title {
   text-align: center;
   padding: 20px;
   color: white;

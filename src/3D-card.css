@@ -3,9 +3,11 @@
     transition-property: transform, box-shadow;
     transition-timing-function: ease-out;
     transform: rotate3d(0,0,0,0);
+    border-radius: 20px;
 }
 
 .hover-card:hover {
+    border-radius: 20px;
     transition-duration: 150ms;
     box-shadow: 0 5px 20px 5px #00000044;
 }
