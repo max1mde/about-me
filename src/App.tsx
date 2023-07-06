@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage.tsx';
 import ContactPage from './pages/ContactPage.tsx';
 import ProjectsPage from './pages/ProjectsPage.tsx';
 import NotFoundPage from './pages/NotFoundPage.tsx';
-import {createBrowserRouter,  RouteObject, RouterProvider} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
@@ -30,28 +30,15 @@ function App() {
         updateHoverEffect();
     }, [location]);
 
-
-    const routes: RouteObject[] = pages.map((page) => ({
-        path: page.path,
-        element: page.component && <page.component />,
-    }));
-
-    routes.push({
-        path: '*',
-        element: <NotFoundPage />,
-    });
-
-    /*const routes = pages.map((page, index) => (
+    const routes = pages.map((page, index) => (
         <Route key={index} path={page.path} element={page.component && <page.component />} />
     ));
-    routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);*/
-
-    const router = createBrowserRouter(routes, { basename: import.meta.env.DEV ? '/' : '/about-me/' })
+    routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);
 
     return (
         <div data-bs-theme="dark">
                 <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => null} />
-            <RouterProvider router={router} />
+                <Routes>{routes}</Routes>
         </div>
     );
 }
