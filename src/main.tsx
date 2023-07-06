@@ -7,7 +7,6 @@ import './blur-image.css';
 import './3D-card.css';
 import { BrowserRouter } from 'react-router-dom';
 
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
       <BrowserRouter>
@@ -16,6 +15,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   </React.StrictMode>,
 )
 
+
 const script = document.createElement('script');
 script.src = '/src/hover-3D.js';
 document.body.appendChild(script);
+

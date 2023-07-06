@@ -1,7 +1,6 @@
-const cards = document.querySelectorAll('.hover-card');
+let cards = document.querySelectorAll('.hover-card');
 
-console.log(cards.length);
-
+updateCards();
 function rotateToMouse(e) {
     const card = e.currentTarget;
     const mouseX = e.clientX;
@@ -54,7 +53,12 @@ function handleMouseLeave(e) {
     }
 }
 
-cards.forEach((card) => {
-    card.addEventListener('mouseenter', handleMouseEnter);
-    card.addEventListener('mouseleave', handleMouseLeave);
-});
+function updateCards() {
+    cards = document.querySelectorAll('.hover-card');
+    cards.forEach((card) => {
+        card.addEventListener('mouseenter', handleMouseEnter);
+        card.addEventListener('mouseleave', handleMouseLeave);
+    });
+}
+
+

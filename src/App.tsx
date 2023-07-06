@@ -4,12 +4,17 @@ import ContactPage from './pages/ContactPage.tsx';
 import ProjectsPage from './pages/ProjectsPage.tsx';
 import NotFoundPage from './pages/NotFoundPage.tsx';
 import { Route, Routes } from "react-router";
+import {useLocation} from "react-router-dom";
+import {useEffect} from "react";
+
 
 interface Page {
     title: string;
     path: string;
     component: React.ComponentType<any> | null;
 }
+
+
 
 function App() {
 
@@ -18,6 +23,13 @@ function App() {
         { title: "Contact", path: "/contact", component: ContactPage },
         { title: "Projects", path: "/projects", component: ProjectsPage },
     ];
+
+    const location = useLocation();
+
+    useEffect(() => {
+        updateHoverEffect();
+    }, [location]);
+
     const routes = pages.map((page, index) => (
         <Route key={index} path={page.path} element={page.component && <page.component />} />
     ));
@@ -28,6 +40,12 @@ function App() {
             <Routes>{routes}</Routes>
         </div>
     );
+}
+
+function updateHoverEffect() {
+    if (typeof window.updateCards === 'function') {
+        window.updateCards();
+    }
 }
 
 export default App;

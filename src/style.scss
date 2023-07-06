@@ -13,6 +13,7 @@ $background: #843600 !default;
   z-index: 999;
   transition: transform 0.3s ease;
 }
+
 .primary-button:hover {
   transform: scale(1.2);
 }
@@ -21,6 +22,7 @@ $background: #843600 !default;
   z-index: 999;
   transition: transform 0.3s ease;
 }
+
 .btn-primary:hover {
   transform: scale(1.2);
 }
@@ -48,6 +50,7 @@ body {
   filter: blur(2px);
   transform: scale(0.9);
 }
+
 
 .project-card:hover {
   transform: scale(1.05);
