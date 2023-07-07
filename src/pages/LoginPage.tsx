@@ -18,7 +18,8 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        if (password === "lol") {
+        const pw = "nullpointer"; //WOW! You have found the password ;)
+        if (password === pw) {
             localStorage.setItem("password", password);
             setLoggedIn(true);
             window.location.href = "/";
@@ -27,7 +28,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
     };
 
     if (loggedIn) {
-        return null; // If already logged in, don't render the login page
+        return null;
     }
 
     return (
@@ -37,11 +38,12 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
             <div className="home-main-content login-page-content">
                 <div>
                     <div className={"glow"}/>
-                    <h1 className={"home-main-title login-page-title"}>Hi</h1>
+                    <h1 className={"home-main-title login-page-title"}>Login</h1>
                     <form className={"form-inline d-grid gap-2"} onSubmit={handleSubmit}>
                             <input
                                 className={"form-control"}
                                 type="password"
+                                placeholder="Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
