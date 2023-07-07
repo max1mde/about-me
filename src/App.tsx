@@ -5,7 +5,8 @@ import ProjectsPage from './pages/ProjectsPage.tsx';
 import NotFoundPage from './pages/NotFoundPage.tsx';
 import { Route, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import {useEffect, useState} from "react";
+import LoginPage from "./pages/LoginPage.tsx";
 
 
 interface Page {
@@ -15,7 +16,12 @@ interface Page {
 }
 
 function App() {
-
+    const [loggedIn, setLoggedIn] = useState(
+        !!localStorage.getItem('password')
+    );
+    const handleLogin = () => {
+        setLoggedIn(true);
+    };
     const pages: Page[] = [
         { title: "Home", path: "/", component: HomePage },
         { title: "Contact", path: "/contact", component: ContactPage },
@@ -28,14 +34,24 @@ function App() {
         updateHoverEffect();
     }, [location]);
 
-    const routes = pages.map((page, index) => (
+    /*const routes = pages.map((page, index) => (
         <Route key={index} path={page.path} element={page.component && <page.component />} />
-    ));
+    ));*/
+    const routes = loggedIn
+        ? pages.map((page, index) => (
+            <Route key={index} path={page.path} element={page.component && <page.component />} />
+        ))
+        : [
+            <Route key="login" path="*" element={<LoginPage onLogin={handleLogin} />} />
+        ];
+
     routes.push(<Route key="404" path="*" element={<NotFoundPage />} />);
 
     return (
         <div data-bs-theme="dark">
+            {loggedIn && (
                 <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => null} />
+            )}
                 <Routes>{routes}</Routes>
         </div>
     );

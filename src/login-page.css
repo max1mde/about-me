@@ -1,0 +1,11 @@
+.login-page-card {
+    align-items: center;
+    padding: 160px;
+}
+.login-page-title {
+    margin-bottom: 10%;
+    text-align: center;
+}
+.form-control {
+    z-index: 999;
+}

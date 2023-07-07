@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
+import Button from "./Button.tsx";
 
 interface Props {
     pages: Page[];
@@ -47,6 +48,7 @@ function Navbar({ title, pages, onSelectItem, active }: Props) {
                             <div className="input-group">
                                 <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
                                 <button className="btn btn-outline-primary custom-search-button primary-search-button " type="submit">Search</button>
+                                <Button onClick={() => localStorage.removeItem("password")} buttonURL={"/"}>Logout</Button>
                             </div>
                         </form>
                     </div>
