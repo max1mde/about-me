@@ -18,8 +18,8 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const pw = "nullpointer"; //WOW! You have found the password ;)
-        if (password === pw) {
+        const congratulations_you_have_found_the_password = "nullpointer";
+        if (password === congratulations_you_have_found_the_password) {
             localStorage.setItem("password", password);
             setLoggedIn(true);
             window.location.href = "/";
