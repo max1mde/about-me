@@ -22,6 +22,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
         if (password === congratulations_you_have_found_the_password) {
             localStorage.setItem("password", password);
             setLoggedIn(true);
+            //TODO refresh window
             onLogin();
         }
     };
