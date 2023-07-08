@@ -1,7 +1,5 @@
-
 import Card from "../components/Card.tsx";
 import {useState} from "react";
-
 
 
 interface Project {
@@ -12,7 +10,6 @@ interface Project {
     imageSRC: string;
     placeholderIMG?: string;
 }
-
 
 function ProjectsPage() {
 

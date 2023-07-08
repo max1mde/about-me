@@ -1,11 +1,8 @@
-// style.scss
-
-
 $primary: #9a2eff !default;
 
 $secondary: #6d6d6d !default;
 
-@import "bootstrap";
+@import "../../node_modules/bootstrap";
 
 $background: #843600 !default;
 
@@ -100,7 +97,7 @@ body::before {
   width: 140vw;
   height: 140vh;
   z-index: -1;
-  background-image: url("../public/images/background.png");
+  background-image: url("../../public/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

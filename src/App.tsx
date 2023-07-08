@@ -50,7 +50,7 @@ function App() {
     return (
         <div data-bs-theme="dark">
             {loggedIn && (
-                <Navbar title="Maxim Fiedler" active={0} pages={pages} onSelectItem={() => null} />
+                <Navbar title="Maxim" active={0} pages={pages} onSelectItem={() => null} />
             )}
                 <Routes>{routes}</Routes>
         </div>
