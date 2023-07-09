@@ -1,3 +1,13 @@
+<p align="center">
+<a href=""><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"></a>
+<a href=""><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"></a>
+<a href=""><img src="https://img.shields.io/badge/TypeScript-20232A?style=for-the-badge&logo=typescript&logoColor=61DAFB" alt="bStats"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/MaximFiedler/about-me/blob/master/LICENSE"><img src="https://img.shields.io/github/license/MaximFiedler/about-me.svg" alt="License"></a>  
+<a href="https://github.com/MaximFiedler/about-me/releases"><img src="https://img.shields.io/github/v/tag/about-me/about-me.svg" alt="Version"></a>  
+</p>
+
 # Personal website
 
 This is my first website which I built with React. 
