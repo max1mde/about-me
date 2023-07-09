@@ -5,7 +5,8 @@
 </p>
 <p align="center">
   <a href="https://github.com/MaximFiedler/about-me/blob/master/LICENSE"><img src="https://img.shields.io/github/license/MaximFiedler/about-me.svg" alt="License"></a>  
-<a href="https://github.com/MaximFiedler/about-me/releases"><img src="https://img.shields.io/github/v/tag/about-me/about-me.svg" alt="Version"></a>  
+<a href="https://github.com/MaximFiedler/about-me/releases"><img src="https://img.shields.io/github/contributors/MaximFiedler/about-me
+" alt="Version"></a>  
 </p>
 
 # Personal website
