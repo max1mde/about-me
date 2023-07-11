@@ -6,6 +6,19 @@ $secondary: #6d6d6d !default;
 
 $background: #843600 !default;
 
+.card-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card-badges img {
+  margin-right: 5px;
+  max-width: 45%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
 .primary-button {
   z-index: 999;
   transition: transform 0.3s ease;
