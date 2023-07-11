@@ -21,5 +21,5 @@ You can view the website here:
 https://maximfiedler.com
 Password: `nullpointer`
 
-![image](https://github.com/MaximFiedler/about-me/assets/114857048/82265eae-614c-4487-acea-d97fc59647e5)
+![image](https://github.com/MaximFiedler/about-me/assets/114857048/69cd95c7-c170-417e-94ed-ab440911a97f)
 
