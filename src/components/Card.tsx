@@ -53,27 +53,30 @@ const Card = ({ title, description, buttonText, buttonURL, placeholderIMG="not-d
         <div className={cardClassName} style={cardStyle}
              onMouseEnter={() => handleCardHover(true)}
              onMouseLeave={() => handleCardHover(false)}>
-
-            <img
-                src={loaded ? imageSRC : placeholder}
-                loading="lazy"
-                className="card-img-top"
-                style={imageStyle}
-                alt="banner"
-            />
-                <div className="card-body project-card-body">
-                    <div className="card-badges">
-                        {badges.map((badge, index) => (
-                            <img key={index} src={badge} alt="badge" />
-                        ))}
-                    </div>
-                    <h5 className="card-title">{title}</h5>
-                    <p className="card-text">{description}</p>
-                    <div className="glow"/>
-                    <a target="_blank" href={buttonURL} className="btn btn-primary primary-button card-button">
-                        {buttonText}
-                    </a>
+            <div className="hover14 column">
+                <figure>
+                    <img
+                        src={loaded ? imageSRC : placeholder}
+                        loading="lazy"
+                        className="card-img-top"
+                        style={imageStyle}
+                        alt="banner"
+                    />
+                </figure>
+            </div>
+            <div className="card-body project-card-body">
+                <div className="card-badges">
+                    {badges.map((badge, index) => (
+                        <img key={index} src={badge} alt="badge" />
+                    ))}
                 </div>
+                <h5 className="card-title">{title}</h5>
+                <p className="card-text">{description}</p>
+                <div className="glow"/>
+                <a target="_blank" href={buttonURL} className="btn btn-primary primary-button card-button">
+                    {buttonText}
+                </a>
+            </div>
         </div>
     );
 };
