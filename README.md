@@ -14,7 +14,7 @@ This is my first website which I built with React.
 For the design I use Bootstrap and some custom CSS. 
 The 3D hover effect of the cards i got from here https://codepen.io/markmiro/pen/wbqMPa
 
-If you have any suggestions for improvement feel free to contact me or open a pull request.
+### If you have any suggestions for improvement feel free to contact me or open a pull request.
 
 ## Website preview
 You can view the website here:
