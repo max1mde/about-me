@@ -22,7 +22,7 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
         if (password === congratulations_you_have_found_the_password) {
             localStorage.setItem("password", password);
             setLoggedIn(true);
-            //TODO refresh window
+            setTimeout(updateHoverEffect, 1)
             onLogin();
         }
     };
@@ -55,5 +55,11 @@ const LoginPage = ({ onLogin }: LoginPageProps) => {
         </div>
     );
 };
+
+function updateHoverEffect() {
+    if (typeof window.updateCards === 'function') {
+        window.updateCards();
+    }
+}
 
 export default LoginPage;

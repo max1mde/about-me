@@ -6,6 +6,30 @@ $secondary: #6d6d6d !default;
 
 $background: #843600 !default;
 
+h1 {
+  transition: text-shadow 0.3s;
+}
+
+h1:hover {
+  text-shadow: 0.5px 0.5px 10px white;
+}
+
+h5 {
+  transition: text-shadow 0.3s;
+}
+
+h5:hover {
+  text-shadow: 0.3px 0.3px 6px white;
+}
+
+p {
+  transition: text-shadow 0.2s;
+}
+
+p:hover {
+  text-shadow: 0.2px 0.2px 10px white;
+}
+
 .card-badges {
   display: flex;
   flex-wrap: wrap;
@@ -26,7 +50,7 @@ $background: #843600 !default;
 
 .primary-button {
   z-index: 999;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.17s;
 }
 
 .primary-button:hover {
@@ -35,7 +59,7 @@ $background: #843600 !default;
 
 .secondary-button {
   z-index: 999;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.17s;
 }
 
 .secondary-button:hover {
@@ -44,18 +68,17 @@ $background: #843600 !default;
 
 .btn-primary {
   z-index: 999;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.17s;
 }
 
 .btn-secondary {
   z-index: 999;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.17s;
 }
 
 .btn-secondary:hover {
   transform: scale(1.2);
 }
-
 
 .btn-primary:hover {
   transform: scale(1.2);
@@ -84,7 +107,6 @@ body {
   filter: blur(2px);
   transform: scale(0.9);
 }
-
 
 .card-img-top {
   border-top-left-radius: 20px;
@@ -119,11 +141,12 @@ body::before {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  filter: blur(10px);
+  filter: blur(2px);
 }
 
 .navbar-brand-image {
   max-height: 60px;
+  width: 60px;
 }
 
 .center-content {
@@ -156,6 +179,24 @@ body::before {
 }
 
 .projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px 100px 190px;
+  height: 100vh;
+  overflow: auto;
+
+  /* Hide scrollbar for Chrome, Safari, and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge, and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.home-content-container {
   display: flex;
   flex-direction: column;
   align-items: center;

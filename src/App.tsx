@@ -19,9 +19,11 @@ function App() {
     const [loggedIn, setLoggedIn] = useState(
         !!localStorage.getItem('password')
     );
+
     const handleLogin = () => {
         setLoggedIn(true);
     };
+
     const pages: Page[] = [
         { title: "Home", path: "/", component: HomePage },
         { title: "Contact", path: "/contact", component: ContactPage },
@@ -50,7 +52,7 @@ function App() {
     return (
         <div data-bs-theme="dark">
             {loggedIn && (
-                <Navbar title="Maxim" active={0} pages={pages} onSelectItem={() => null} />
+                <Navbar title="" active={0} pages={pages} onSelectItem={() => null} />
             )}
                 <Routes>{routes}</Routes>
         </div>
